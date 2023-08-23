@@ -1,16 +1,19 @@
-# Test 1
-This test is designed to test your proficiency in the basics for most of what we do at Blueprint. 
+# Blueprint Test
+
+This test is designed to test your proficiency in the basics for most of what we do at Blueprint.
+When you are finished please make the repo public and send us the link to the repo along with a short ~3 minute video of you walking through your code and explaining your thought process (no longer than 5 minutes).
+Please reach out if you have any questions. Good luck!
+This shouldn't take more than 2-3 hours to complete.
 
 ## Project Requirements:
-1. use React to create a table with the columns: Campaign, Adset, Creative, Spend, Impressions, Clicks, Results
-2. use the data in the fakeDataSet from the provided API to populate the table with standardized data
-3. the table should be sortable by at least one column
-4. the table should be searchable by at least one column
 
-Bonus points for using TypeScript and TailwindCSS
-Please make this a github project and then send us the link to the github project when you are done for us to fork and run locally to test the code
+1. use React to create a view with cards for each ad with the following information: Campaign, Adset, Creative, Spend, Impressions, Clicks, Results
+2. use the data in the fakeDataSet from the provided API to populate the cards with standardized data
+3. the cards should be sortable by spend, ascending and descending order and it should be clearable
+4. the cards should be searchable by the campaign name
 
 ### Background Information
+
 an ad is a unique combination of a campaign, adset, and creative, different platforms may call them different names and part of what Blueprint does is standardize the names across platforms so that we can compare the data across platforms.
 campaign is called campaign_name in facebook, campaign in twitter, campaign_name in snapchat, utm_campaign in google analytics,
 adset is called media_buy_name in facebook, ad_group in twitter, ad_squad_name in snapchat, utm_medium in google analytics
@@ -21,62 +24,21 @@ clicks === post_clicks
 google analytics doesnt contain metrics like spend, clicks or impressions. it is where we get results from and have to allocate them to the ads that come from the platforms
 meaning that you will have to put the results that come from google analytics into the correct ad from the platform
 
-# Test 2
-This test is designed to test your ability to read and debug code others have written. 
+### Setup
 
-have a barebones 'promo-code-ad' creation mechanism that takes dates, spend and promo code string
+<!-- instructions on how to start the json server -->
 
-<!-- have dates be noninclusive
-have one scenario be a user error and ask how they would respond to the client
- -->
+if you haven't already, install json-server globally
 
+```
+npm install -g json-server
+```
 
+then run the following command in the root directory of this project
 
+```
+json-server --watch db.json
+```
 
-<!-- dont include this in the actual read me -->
-interface fakeDataSet {
-  facebook_ads: [
-    {
-      campaign_name: string;
-      media_buy_name: string;
-      ad_name: string;
-      spend: number;
-      impressions: number;
-      clicks: number;
-      date: Date;
-    }
-  ];
-  twitter_ads: [
-    {
-      campaign: string;
-      ad_group: string;
-      image_name: string;
-      spend: number;
-      impressions: number;
-      post_clicks: number;
-      date: Date;
-    }
-  ];
-  snapchat_ads: [
-    {
-      campaign_name: string;
-      ad_squad_name: string;
-      creative_name: string;
-      cost: number;
-      impressions: number;
-      post_clicks: number;
-      date: Date;
-    }
-  ];
-  google_analytics: [
-    {
-      utm_campaign: string;
-      utm_medium: string;
-      utm_content: string;
-      results: number;
-      date: Date;
-    }
-  ];
-}
-
+the endpoint for the data is http://localhost:3000/fakeDataSet
 
