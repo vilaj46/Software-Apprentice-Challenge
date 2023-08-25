@@ -16,9 +16,11 @@ Please reach out if you have any questions. Good luck!
 
 An ad is a unique combination of a campaign, adset, and creative. Different platforms may call them different names and part of what Blueprint does is standardize the names across platforms so that we can compare the data.
 
-Campaign === campaign_name === campaign === utm_campaign
-Adset === media_buy_name === ad_group === ad_squad_name === utm_medium
-Creative === ad_name === image_name === creative_name === utm_content
+campaign_name === campaign === utm_campaign
+
+media_buy_name === ad_group === ad_squad_name === utm_medium
+
+ad_name === image_name === creative_name === utm_content
 
 Different platforms also don't name all of their metrics the same either, so we have to standardize those as well.
 
