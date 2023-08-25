@@ -16,9 +16,9 @@ Please reach out if you have any questions. Good luck!
 
 An ad is a unique combination of a campaign, adset, and creative. Different platforms may call them different names and part of what Blueprint does is standardize the names across platforms so that we can compare the data.
 
-Campaign is called campaign_name in facebook, campaign in twitter, campaign_name in snapchat, utm_campaign in google analytics.
-Adset is called media_buy_name in facebook, ad_group in twitter, ad_squad_name in snapchat, utm_medium in google analytics.
-Creative is called ad_name in facebook, image_name in twitter, creative_name in snapchat, utm_content in google analytics.
+Campaign === campaign_name === campaign === utm_campaign
+Adset === media_buy_name === ad_group === ad_squad_name === utm_medium
+Creative === ad_name === image_name === creative_name === utm_content
 
 Different platforms also don't name all of their metrics the same either, so we have to standardize those as well.
 
