@@ -1,6 +1,6 @@
 # Blueprint Test
 
-This test is designed to test your proficiency in the basics for a large part what you will be developing at Blueprint.
+This test is designed to test your proficiency in the basics for a large part of what you will be developing at Blueprint.
 When you are finished please make the repo public and send us the link to the repo along with a short video of you walking through your code and explaining your thought process.
 This shouldn't take more than 2-3 hours to complete.
 Please reach out if you have any questions. Good luck!
