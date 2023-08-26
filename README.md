@@ -3,6 +3,7 @@
 This test is designed to test your proficiency in the basics for a large part of what you will be developing at Blueprint.
 
 To take the test: fork this repository, and push changes to the your forked repo.
+
 When you are finished please send us the link to the repo along with a short video of you walking through your code and explaining your thought process. Make sure the repo is public, so we can access it.
 This shouldn't take more than 2-3 hours to complete.
 Please don't hesitate to reach out if you have any questions. Good luck!
