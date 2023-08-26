@@ -17,7 +17,11 @@ Please don't hesitate to reach out if you have any questions. Good luck!
 
 ### Background Information
 
-An ad is a unique combination of a campaign, adset, and creative. Different platforms may call them different names and part of what Blueprint does is standardize the names across platforms so that we can compare the data.
+At Blueprint, much of our data is in "ads". 
+
+An `ad` is a unique combination of a `campaign`, `adset`, and `creative`. Different platforms may call them different names; part of what Blueprint does is standardize the names across platforms so that we can compare the data.
+
+The following values are all equivalent.
 
 campaign_name === campaign === utm_campaign
 
