@@ -33,6 +33,8 @@ meaning that you will have to put the results that come from google analytics in
 
 ### Setup
 
+It is important to start the json server before you start the react app
+
 <!-- instructions on how to start the json server -->
 
 if you haven't already, install json-server globally
@@ -48,3 +50,11 @@ json-server --watch db.json
 ```
 
 the endpoint for the data is http://localhost:3000/fakeDataSet
+
+to start React run either of the following commands in the root directory of this project
+
+```
+yarn start
+OR
+npm start
+```
